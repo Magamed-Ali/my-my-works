@@ -1,0 +1,97 @@
+
+$color-demo: #337ab7;
+$color-p-demo-hover: #002f64;
+$git-a: #a94442;
+$git-a-hiver: #642926;
+$title: #004085;
+
+
+@font-face {
+  font-family: 'Helvetic';
+  src: url('../public/assets/fonts/helvetica_regular.otf');
+}
+
+body {
+  margin: 0px;
+  padding: 40px 0 30px;
+  background-color: rgb(255, 255, 255);
+
+  p{
+    font-weight: 500;
+    font-family: "Helvetic";
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.wrapper-card {
+  border: 1px solid rgb(162, 158, 156);
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: 0 0 10px 4px rgb(161, 163, 161);
+
+  &__boxlink {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+
+    .heroku a {
+      color: $color-demo;
+      text-decoration: none;
+
+      &:hover {
+        color: $color-p-demo-hover;
+        text-decoration: underline;
+      }
+    }
+
+    .git a {
+      color: $git-a;
+      text-decoration: none;
+
+      &:hover {
+        color: $git-a-hiver;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  h5 {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Helvetic";
+    color: $git-a;
+    margin: 20px 0 10px 0px;
+  }
+
+  p {
+    min-height: 100px;
+    color: $title;
+    margin: 0 0 10px;
+    line-height: 22px;
+  }
+
+  &:hover {
+    box-shadow: 0 0 10px 2px rgb(164, 170, 163);
+  }
+}
+
+.title {
+  font-size: 38px;
+  font-weight: 400;
+  color: rgb(73, 73, 73);
+
+  p {
+    margin: -30px 0 0 20px;
+  }
+}
+
+
+
+
+
+
