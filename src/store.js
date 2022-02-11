@@ -2,10 +2,10 @@
 const initState = {
     project: [
         {
-            title: 'Counter 1',
-            description: "Название проекта",
-            linkDemo: "/",
-            linkGit: "/"
+            title: 'Vaccination',
+            description: "Небольшое приложение на React, которое умеет регистрировать на вакцинацию от КОВИД-19.",
+            linkDemo: "https://evening-caverns-34993.herokuapp.com/",
+            linkGit: "https://github.com/Magamed-Ali/registration-for-vaccination/tree/release-0.0.3"
         },
         {
             title: 'Counter 2',
