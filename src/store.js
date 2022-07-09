@@ -8,10 +8,10 @@ const initState = {
             linkGit: "https://github.com/Magamed-Ali/registration-for-vaccination/tree/release-0.0.3"
         },
         {
-            title: 'Counter 2',
-            description: "Название проекта",
-            linkDemo: "",
-            linkGit: ""
+            title: 'Movies project',
+            description: "Поиск фильм (по названию фильма, по жанре, серийные фильмы)",
+            linkDemo: "https://magamed-ali.github.io/movies-project/",
+            linkGit: "https://github.com/Magamed-Ali/movies-project"
         },
         {
             title: 'Counter 3',
