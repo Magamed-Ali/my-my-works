@@ -17,7 +17,11 @@ function App() {
                         <div className="col-sm-6 col-lg-4">
                             <div className="wrapper-card">
                                 <h5>{item.title}</h5>
-                                <p>{item.description}</p>
+                                <div className="wrapper-card__img">
+                                    <p>{item.description}</p>
+                                    <img src={item.img} alt="img"/>
+                                </div>
+
                                 <div className="wrapper-card__boxlink">
                                     <span className="heroku"><a href={item.linkDemo}
                                                               target="_blank">Перейти</a></span>

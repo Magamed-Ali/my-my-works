@@ -34,6 +34,18 @@ body {
   border-radius: 8px;
   box-shadow: 0 0 10px 4px rgb(161, 163, 161);
 
+  &__img{
+    display: flex;
+    justify-content: space-between;
+
+    img{
+      width: 40%;
+      height: 100px;
+      border: 1px solid rgba(0, 0, 0, 0.51);
+      border-radius: 5px;
+    }
+  }
+
   &__boxlink {
     display: flex;
     justify-content: space-around;
@@ -69,6 +81,8 @@ body {
   }
 
   p {
+    max-width: 60%;
+    text-align: left;
     min-height: 100px;
     color: $title;
     margin: 0 0 10px;
@@ -88,6 +102,14 @@ body {
   p {
     margin: -30px 0 0 20px;
   }
+}
+
+@media screen and (max-width: 1400px) {
+
+  .wrapper-card {
+    min-height: 280px;
+  }
+
 }
 
 
