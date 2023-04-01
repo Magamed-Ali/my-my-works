@@ -4,8 +4,8 @@ const initState = {
         {
             title: 'Vaccination',
             description: "Небольшое приложение на React, которое умеет регистрировать на вакцинацию от КОВИД-19.",
-            linkDemo: "https://morning-taiga-48493.herokuapp.com/",
-            linkGit: "https://github.com/Magamed-Ali/registration-for-vaccination/tree/release-0.0.3"
+            linkDemo: "https://registration-for-vaccination-3i4i.vercel.app/",
+            linkGit: "https://github.com/Magamed-Ali/registration_for_vaccination"
         },
         {
             title: 'Movies project',
