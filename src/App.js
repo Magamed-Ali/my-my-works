@@ -1,5 +1,6 @@
 import React from 'react';
 import {useSelector} from "react-redux";
+import img_0 from "./img-0.png";
 import './style.scss'
 
 function App() {
@@ -19,7 +20,13 @@ function App() {
                                 <h5>{item.title}</h5>
                                 <div className="wrapper-card__img">
                                     <p>{item.description}</p>
-                                    <img src={item.img} alt="img"/>
+                                    {
+                                        item.img.length > 0 ?
+                                            <img src={item.img} alt="img"/>
+                                            :
+                                            <img src={img_0} alt="img"/>
+                                    }
+
                                 </div>
 
                                 <div className="wrapper-card__boxlink">
