@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {createStore} from "redux";
 import {reduser} from "./store";
 import {Provider} from "react-redux";
+import './style.scss'
 
 
 
