@@ -1,4 +1,4 @@
-import * as React from 'react';
+import  React, {useEffect} from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -14,8 +14,24 @@ function NavBar() {
 
     const [modal, setModal] = useState(false)
 
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        function handleScroll() {
+            if (window.scrollY >= 150) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        }
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
-        <div className="nav-bar">
+        <div className={`nav-bar ${isScrolled ? 'element scrolled' : 'element'}`}>
             <Box sx={{flexGrow: 1}}>
                 <AppBar position="static" sx={{
                     backgroundColor: "rgba(42,44,57,0)",
@@ -62,7 +78,7 @@ function NavBar() {
                             :
                             null
                         }
-                        <Button>Hire Me </Button>
+                        <button>Hire Me </button>
                         <MenuIcon className="menu-icon" onClick={() => setModal(true)}/>
                     </Toolbar>
                 </AppBar>

@@ -1,3 +1,4 @@
+@import "css-pulse-animation";
 
 body {
   background: #2a2c39;
@@ -6,10 +7,124 @@ body {
 
 }
 
+.projects{
+  width: 100%;
+  height: 600px;
+  background: #364bda;
+}
+
+.semicircle-top {
+  display: block;
+  position: absolute;
+  top: -100px;
+  left: -1px;
+  z-index: -1;
+
+  .one {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 0 0 100% 0 ;
+  }
+
+  .two {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 0 0 100% 0 ;
+  }
+
+  .three {
+    position: absolute;
+    width: 310px;
+    height: 310px;
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 0 0 100% 0 ;
+  }
+}
+.semicircle-bottom{
+  display: block;
+  position: absolute;
+  bottom: -110px;
+  left: 0;
+  z-index: -1;
+
+  .one {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 0 100% 0 0;
+
+  }
+
+  .two {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+    height: 250px;
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 0 100% 0 0;
+  }
+
+  .three {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 310px;
+    height: 310px;
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 0 100% 0 0;
+  }
+}
+
 .home {
   position: relative;
   width: 100%;
   padding: 0;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-size: 18px;
+  border: 1px solid #3b3d49;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  background: rgba(42, 44, 57, 0);
+  white-space: nowrap;
+
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 60px;
+  border-radius: 32.5px;
+  line-height: 30px;
+  color: #fff;
+  font-weight: 600;
+
+  &:after {
+    content: ">>";
+    box-sizing: border-box;
+    opacity: 0.2;
+    transition: opacity .3s ease;
+  }
+
+  &:hover:after {
+    opacity: 1;
+  }
+
+  &:hover {
+    background: #2e303d;
+
+
+  }
 }
 
 .nav-bar {
@@ -49,27 +164,9 @@ body {
   }
 
   button {
-    box-sizing: border-box;
-    font-size: 18px;
-    border: 1px solid #3b3d49;
-    -webkit-transition: all .5s ease;
-    transition: all .5s ease;
-    background: rgba(42, 44, 57, 0);
-    white-space: nowrap;
-
-    padding-left: 30px;
-    padding-right: 30px;
-    height: 60px;
-    border-radius: 32.5px;
-    line-height: 30px;
-    color: #fff;
-    font-weight: 600;
 
     &:after {
       content: ">>";
-      box-sizing: border-box;
-      opacity: 0.2;
-      transition: opacity .3s ease;
     }
 
     &:hover:after {
@@ -87,15 +184,172 @@ body {
     display: none;
   }
 
-  .close-icon{
+  .close-icon {
     display: none;
   }
-
 }
 
-@media screen and (max-width: 991px) {
-  .nav-bar {
+.main {
+  display: flex;
+  justify-content: space-between;
+  height: calc(100vh - 120px);
+  margin-top: 120px;
 
+  &__name {
+    color: #fff;
+    font-family: "Cormorant Garamond", serif;
+    margin-top: 80px;
+
+    h3 {
+      font-size: 85px;
+      font-weight: 600;
+    }
+
+    h2 {
+      font-size: 95px;
+      font-weight: 600;
+    }
+
+    p {
+      width: 400px;
+      font-size: 18px;
+      margin-top: 40px;
+      margin-bottom: 60px;
+      font-family: 'Poppins', sans-serif;
+      color: #858792;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+
+    button {
+      padding-left: 60px;
+      padding-right: 60px;
+      height: 85px;
+      line-height: 70px;
+      border-radius: 60px;
+
+      svg {
+        font-size: 20px;
+        margin-left: 8px;
+      }
+
+      &:after {
+        content: "";
+      }
+    }
+  }
+
+  &__video-link {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 250px;
+    height: 150px;
+    margin-top: 50px;
+    font-weight: 600;
+    color: #858792;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+
+    svg {
+      position: absolute;
+      top: 38%;
+      left: 18%;
+      font-size: 35px;
+
+    }
+  }
+
+  &__photo {
+    position: relative;
+    left: 20px;
+    width: 600px;
+    height: 80vh;
+
+    .left{
+      position: absolute;
+      top: 20%;
+      right: -30px;
+      height: 80%;
+      width: 1px;
+      background: rgba(76, 97, 137, 0.8);
+      box-shadow: 0px 0px 18px 1px rgba(59, 70, 97, 1);
+    }
+
+    .center{
+      position: absolute;
+      top: 10%;
+      right: 0px;
+      height: 80%;
+      width: 1px;
+      background: #3ac7e5;
+      box-shadow: 0px 0px 18px 1px rgba(59, 70, 97, 1);
+
+      div svg{
+        position: absolute;
+        padding: 10px;
+        font-size: 50px;
+        border: 1px solid #6789c6;
+        border-radius: 50%;
+        box-shadow: 0px 0px 6px 1px #3ac7e5;
+        color: #e9e9eb;
+        background: #2a2c39;
+        transition: 0.3s;
+
+        &:hover{
+          color: #6789c6;
+          box-shadow: 0px 0px 12px 1px #3ac7e5;
+        }
+
+      }
+
+      .linked svg{
+        top: 1%;
+        left: -25px;
+      }
+
+      .facebook svg {
+        bottom: 1%;
+        left: -25px;
+      }
+      .telegram svg {
+        bottom: 30%;
+        left: -25px;
+      }
+      .instagram svg {
+        top: 30%;
+        left: -25px;
+      }
+    }
+
+    .right{
+      position: absolute;
+      top: 0;
+      right: 30px;
+      height: 80%;
+      width: 1px;
+      background: rgba(76, 97, 137, 0.8);
+      box-shadow: 0px 0px 18px 1px rgba(59, 70, 97, 1);
+    }
+
+    img{
+
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+@media screen and (max-width: 991px) {
+  .main{
+    height: 100%;
+    flex-flow: wrap;
+    flex-direction: column-reverse;
+  }
+  .semicircle-top, .semicircle-bottom{
+    display: none;
+  }
+  .nav-bar {
 
 
     ul {
@@ -112,7 +366,7 @@ body {
 
   .nav-bar {
 
-    .close-icon{
+    .close-icon {
       display: block;
     }
 
@@ -124,11 +378,11 @@ body {
       width: 100%;
       height: 100vh;
       padding-left: 15px;
-      background: rgba(0,0,0,.5);
+      background: rgba(0, 0, 0, .5);
       z-index: 99;
       animation: fadeIn 1s ease-in-out forwards;
 
-      .bg-modal{
+      .bg-modal {
         position: absolute;
         right: 0;
         width: 45%;
@@ -216,96 +470,34 @@ body {
   }
 }
 
-/*.home{
-  height: 100vh;
-  background: #5f8ed3;
-}
-
-.wrapper-card {
-  border: 1px solid rgb(162, 158, 156);
-  padding: 15px;
-  margin-bottom: 15px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 8px;
-  box-shadow: 0 0 10px 4px rgb(161, 163, 161);
-
-  &__img{
-    display: flex;
-    justify-content: space-between;
-
-    img{
-      width: 40%;
-      height: 100px;
-      border: 1px solid rgba(0, 0, 0, 0.51);
-      border-radius: 5px;
-    }
+@media (min-width: 420px) {
+  .main__name h2 {
+    font-size: calc(5.100vw + 22px);
   }
-
-  &__boxlink {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 10px;
-
-    .heroku a {
-      color: $color-demo;
-      text-decoration: none;
-
-      &:hover {
-        color: $color-p-demo-hover;
-        text-decoration: underline;
-      }
-    }
-
-    .git a {
-      color: $git-a;
-      text-decoration: none;
-
-      &:hover {
-        color: $git-a-hiver;
-        text-decoration: underline;
-      }
-    }
-  }
-
-  h5 {
-    font-size: 16px;
-    font-weight: 500;
-    font-family: "Helvetic";
-    color: $git-a;
-    margin: 20px 0 10px 0px;
-  }
-
-  p {
-    max-width: 60%;
-    text-align: left;
-    min-height: 100px;
-    color: $title;
-    margin: 0 0 10px;
-    line-height: 22px;
-  }
-
-  &:hover {
-    box-shadow: 0 0 10px 2px rgb(164, 170, 163);
+  .main__name h3 {
+    font-size: calc(5.100vw + 22px);
   }
 }
 
-.title {
-  font-size: 38px;
-  font-weight: 400;
-  color: rgb(73, 73, 73);
-
-  p {
-    margin: -30px 0 0 20px;
+@media (min-width: 1250px) {
+  .main__name h2 {
+    font-size: 95px;
+  }
+  .main__name h3 {
+    font-size: 85px;
   }
 }
 
-@media screen and (max-width: 1400px) {
 
-  .wrapper-card {
-    min-height: 280px;
-  }
 
-}*/
+.scrolled {
+  transition: 1s;
+  background: #2a2c39;
+}
+
+
+
+
 
 
 
