@@ -45,7 +45,7 @@ function NavBar() {
                     <Toolbar className="container"
                              sx={{display: "flex", justifyContent: "space-between", alignItems: "center"}}>
                         <Typography variant="h6" component="div" sx={{fontFamily: "Helvetic", fontSize: 35}}>
-                            <img src={process.env.PUBLIC_URL + '/assets/images/logoNav.png'} alt="logo"
+                            <img src={process.env.PUBLIC_URL + '/assets/images/LogoNav.png'} alt="logo"
                                  style={{
                                      filter: "invert(100%)",
                                      color: "wheat",

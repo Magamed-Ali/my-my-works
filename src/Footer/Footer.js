@@ -6,7 +6,7 @@ function Footer() {
         <div className="footer">
             <div className="container">
                 <div><p>© {new Date().getFullYear()} Made with <span><FavoriteIcon/></span>  by <span>React</span></p></div>
-                <div><img src={process.env.PUBLIC_URL + '/assets/images/logoNav.png'}  alt="logo" style={{
+                <div><img src={process.env.PUBLIC_URL + '/assets/images/LogoNav.png'}  alt="logo" style={{
                     filter: "invert(100%)",
                     color: "wheat"}}></img></div>
             </div>
