@@ -7,7 +7,6 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import logo from "./logo3.png";
 import {useState} from "react";
 
 function NavBar() {
@@ -30,6 +29,11 @@ function NavBar() {
         };
     }, []);
 
+    function handleClick(event, sectionId) {
+        event.preventDefault();
+        document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
+    }
+
     return (
         <div className={`nav-bar ${isScrolled ? 'element scrolled' : 'element'}`}>
             <Box sx={{flexGrow: 1}}>
@@ -41,7 +45,7 @@ function NavBar() {
                     <Toolbar className="container"
                              sx={{display: "flex", justifyContent: "space-between", alignItems: "center"}}>
                         <Typography variant="h6" component="div" sx={{fontFamily: "Helvetic", fontSize: 35}}>
-                            <img src={logo} alt="logo"
+                            <img src={process.env.PUBLIC_URL + '/assets/images/logoNav.png'} alt="logo"
                                  style={{
                                      filter: "invert(100%)",
                                      color: "wheat",
@@ -57,9 +61,9 @@ function NavBar() {
                                         modal ? <CloseIcon onClick={() => setModal(false)}/> :
                                             <CloseIcon className={"close-icon"}/>
                                     }
-                                    <li>Home</li>
-                                    <li>Skills</li>
-                                    <li>Projects</li>
+                                    <li onClick={(event) => handleClick(event, "home")}>Home</li>
+                                    <li onClick={(event) => handleClick(event, "skills")}>Skills</li>
+                                    <li onClick={(event) => handleClick(event, "projects")}>Projects</li>
                                     <li>Contact</li>
                                 </ul>
                             </div>

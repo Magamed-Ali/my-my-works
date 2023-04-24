@@ -2,7 +2,7 @@ import React from 'react';
 
 function MySkills() {
     return (
-        <div className="my-skills">
+        <div className="my-skills" id="skills">
             <div className="container">
                 <h1>My Skills</h1>
 
@@ -64,7 +64,7 @@ function MySkills() {
                     </span></div>
                     <div className="col"><span>
                         <img src={process.env.PUBLIC_URL + '/assets/images/StyledComponents.png'} alt="logo"/>
-                        <h2>Styled components</h2>
+                        <h2>Styled</h2>
                         <p>Styled Components is one of the popular CSS in JS code writing solutions.</p>
                     </span></div>
 
@@ -97,6 +97,11 @@ function MySkills() {
                         <img src={process.env.PUBLIC_URL + '/assets/images/ChatGPT.png'} alt="logo"/>
                         <h2>ChatGPT</h2>
                         <p>ChatGPT is an artificial intelligence chatbot developed by OpenAI and capable of working in conversational mode, supporting queries in natural languages.</p>
+                    </span></div>
+                    <div className="col"><span>
+                        <img src={process.env.PUBLIC_URL + '/assets/images/GitHub.png'} alt="logo"/>
+                        <h2>GitHub</h2>
+                        <p>GitHub is a code hosting platform for version control and collaboration.</p>
                     </span></div>
 
                 </div>

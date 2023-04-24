@@ -4,6 +4,8 @@ import Home from "./Home/Home";
 import Main from "./Main/Main";
 import MySkills from "./MySkills/MySkills";
 import ScrollToTop from "./scroll-top/ScrollToTop";
+import {Projects} from "./Projects/Projects";
+import Footer from "./Footer/Footer";
 
 function App() {
 
@@ -15,7 +17,8 @@ function App() {
                 <Home/>
                 <Main/>
                 <MySkills/>
-
+                <Projects/>
+                <Footer/>
                 <ScrollToTop/>
             </div>
             <div className="semicircle-top">

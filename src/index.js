@@ -8,8 +8,6 @@ import {Provider} from "react-redux";
 import './style.scss'
 
 
-
-
 const store = createStore(reduser)
 ReactDOM.render(
     <React.StrictMode>

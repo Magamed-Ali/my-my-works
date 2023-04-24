@@ -6,21 +6,21 @@ const initState = {
     project: [
         {
             title: 'Vaccination',
-            description: "Небольшое приложение на React, которое умеет регистрировать на вакцинацию от КОВИД-19.",
+            description: "A small React application that knows how to register for the KOVID-19 vaccination.",
             linkDemo: "https://registration-for-vaccination-3i4i.vercel.app/",
             linkGit: "https://github.com/Magamed-Ali/registration_for_vaccination",
             img: img1
         },
         {
             title: 'Movies project',
-            description: "Поиск фильм (по названию фильма, по жанре, серийные фильмы)",
+            description: "Movie search (by movie title, by genre, serial movies)",
             linkDemo: "https://magamed-ali.github.io/movies-project/",
             linkGit: "https://github.com/Magamed-Ali/movies-project",
             img: img2
         },
         {
             title: 'Watch',
-            description: "Текущее время (+3)",
+            description: "Current time (+3)",
             linkDemo: "https://magamed-ali.github.io/watch/",
             linkGit: "https://github.com/Magamed-Ali/watch",
             img: img3
