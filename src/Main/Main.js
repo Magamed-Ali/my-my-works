@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react';
 import SaveAltIcon from '@mui/icons-material/SaveAlt';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
-import img from "./Lovepik_com-401643778-programmer.png";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -16,9 +15,9 @@ function Main() {
                     <div className="col-xl-5 main__name">
                         <h3>Hello! I`m</h3>
                         <h2>MagomedAli</h2>
-                        <p>UI/UX Designer specializing in Shopify & Webflow.</p>
+                        <p>And I'm a Frontend Developer</p>
 
-                        <button>Get Resume <SaveAltIcon/></button>
+                        <button><a target="_blank" href="https://disk.yandex.ru/i/RqQR6aanChWZPQ">Get Resume <SaveAltIcon/></a></button>
 
                         <div className="main__video-link">
                             <div className="container1">
@@ -37,13 +36,12 @@ function Main() {
 
                     </div>
                     <div className="col-xl-7 main__photo">
-                        <img src={img} alt=""/>
-                        <span className="left"></span>
+                        <img src={process.env.PUBLIC_URL + '/assets/images/Lovepik_com-401643778-programmer.png'} alt="logo"/>
                         <span className="center">
-                            <div className="linked"><LinkedInIcon/></div>
-                            <div className="telegram"><TelegramIcon/></div>
-                            <div className="instagram"><InstagramIcon/></div>
-                            <div className="facebook"><FacebookIcon/></div>
+                            <div className="linked"><a target="_blank" href="https://linkedin.com/in/magomed-ali-gazmagamaev-614002263"><LinkedInIcon/></a></div>
+                            <div className="telegram"><a target="_blank" href="https://t.me/amg095" ><TelegramIcon/></a></div>
+                            <div className="instagram"><a target="_blank" href="https://www.instagram.com/gazmagamaev_magimed_ali/"><InstagramIcon/></a></div>
+                            <div className="facebook"><a target="_blank" href="https://vk.com/id576420378"><FacebookIcon/></a></div>
                             </span>
                         <span className="right"></span>
                     </div>

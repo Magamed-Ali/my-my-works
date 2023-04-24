@@ -2,7 +2,8 @@ import React from 'react';
 import {useSelector} from "react-redux";
 import Home from "./Home/Home";
 import Main from "./Main/Main";
-import Projects from "./Projects/Projects";
+import MySkills from "./MySkills/MySkills";
+import ScrollToTop from "./scroll-top/ScrollToTop";
 
 function App() {
 
@@ -13,7 +14,9 @@ function App() {
             <div>
                 <Home/>
                 <Main/>
-                <Projects/>
+                <MySkills/>
+
+                <ScrollToTop/>
             </div>
             <div className="semicircle-top">
                 <span className="one"></span>
@@ -25,6 +28,7 @@ function App() {
                 <span className="two"></span>
                 <span className="three"></span>
             </div>
+
         </div>
     );
 }
