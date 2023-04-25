@@ -1,6 +1,7 @@
 import img1 from "./work1.png";
 import img2 from "./work2.jpg";
 import img3 from "./work3.jpg";
+import img4 from "./TodoList.jpg";
 
 const initState = {
     project: [
@@ -26,11 +27,11 @@ const initState = {
             img: img3
         },
         {
-            title: 'Counter 4',
+            title: 'TodoList',
             description: "Название проекта",
-            linkDemo: "",
-            linkGit: "",
-            img: ""
+            linkDemo: "https://magamed-ali.github.io/1-todolist/",
+            linkGit: "https://github.com/Magamed-Ali/1-todolist",
+            img: img4
         },
         {
             title: 'Counter 5',
