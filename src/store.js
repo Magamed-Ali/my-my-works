@@ -2,6 +2,7 @@ import img1 from "./work1.png";
 import img2 from "./work2.jpg";
 import img3 from "./work3.jpg";
 import img4 from "./TodoList.jpg";
+import img5 from "./TodoList.jpg";
 
 const initState = {
     project: [
@@ -11,6 +12,13 @@ const initState = {
             linkDemo: "https://registration-for-vaccination-3i4i.vercel.app/",
             linkGit: "https://github.com/Magamed-Ali/registration_for_vaccination",
             img: img1
+        },
+        {
+            title: 'Currency converter',
+            description: "The Currency Converter project is designed for convenient currency conversion using modern technologies. The project uses React library with TypeScript support.",
+            linkDemo: "https://volute-conversion.vercel.app/converter",
+            linkGit: "https://github.com/Magamed-Ali/volute-conversion",
+            img: img5
         },
         {
             title: 'Movies project',
