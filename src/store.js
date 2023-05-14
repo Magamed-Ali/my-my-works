@@ -16,7 +16,7 @@ const initState = {
         {
             title: 'Currency converter',
             description: "The Currency Converter project is designed for convenient currency conversion using modern technologies. The project uses React library with TypeScript support.",
-            linkDemo: "https://volute-conversion.vercel.app/converter",
+            linkDemo: "https://volute-conversion.vercel.app/",
             linkGit: "https://github.com/Magamed-Ali/volute-conversion",
             img: img5
         },
