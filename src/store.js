@@ -2,7 +2,7 @@ import img1 from "./work1.png";
 import img2 from "./work2.jpg";
 import img3 from "./work3.jpg";
 import img4 from "./TodoList.jpg";
-import img5 from "./TodoList.jpg";
+import img5 from "./Currency.jpg";
 
 const initState = {
     project: [
