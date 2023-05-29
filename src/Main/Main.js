@@ -17,7 +17,7 @@ function Main() {
                         <h2>MagomedAli</h2>
                         <p>And I'm a Frontend Developer</p>
 
-                        <button><a target="_blank" href="https://disk.yandex.ru/i/RqQR6aanChWZPQ">Get Resume <SaveAltIcon/></a></button>
+                        <button><a target="_blank" href="https://disk.yandex.ru/i/d2Ty-k_zQB3R-g">Get Resume <SaveAltIcon/></a></button>
 
                         <div className="main__video-link">
                             <div className="container1">

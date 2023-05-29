@@ -6,6 +6,7 @@ import MySkills from "./MySkills/MySkills";
 import ScrollToTop from "./scroll-top/ScrollToTop";
 import {Projects} from "./Projects/Projects";
 import Footer from "./Footer/Footer";
+import Contact from "./Contact/Contact";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
                 <Main/>
                 <MySkills/>
                 <Projects/>
+                <Contact/>
                 <Footer/>
                 <ScrollToTop/>
             </div>
